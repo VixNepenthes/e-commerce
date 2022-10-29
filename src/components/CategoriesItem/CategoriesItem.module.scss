@@ -1,0 +1,37 @@
+.Container {
+    flex: 1;
+    margin: 3px;
+    height: 50vh;
+    position: relative;
+}
+.CategoriesItemImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.CategoriesItemInfo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.CategoriesItemTitle {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.CategoriesItemBtn {
+    border: none;
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+}
+@media only screen and (min-width: 380px) and (max-width: 740px) {
+    .CategoriesItemImg {
+        height: 30vh;
+    }
+}

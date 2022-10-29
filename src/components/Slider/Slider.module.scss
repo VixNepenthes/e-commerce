@@ -1,0 +1,79 @@
+.Container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.Wrapper {
+    height: 100%;
+    display: flex;
+    transition: all 1.5s ease;
+}
+.Slider {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.ImgContainer {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.ImgSlider {
+    height: 80%;
+    justify-content: center;
+}
+.InfoContainer {
+    flex: 1;
+    padding: 50px;
+}
+.Title {
+    font-size: 70px;
+}
+.Desc {
+    margin: 50px 0;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.SliderBtn {
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 1px solid #333;
+}
+.Arrow {
+    width: 50px;
+    height: 50px;
+    background-color: #fff7f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0.8;
+    z-index: 2;
+    margin: auto;
+    &.Left {
+        left: 10px;
+    }
+    &.Right {
+        right: 10px;
+    }
+}
+.ArrowIcon {
+    transform: scale(2.5);
+}
+
+@media only screen and (min-width: 380px) and (max-width: 740px) {
+    .Container {
+        display: none;
+    }
+}

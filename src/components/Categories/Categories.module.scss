@@ -1,0 +1,12 @@
+.Container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 740px) {
+    .Container {
+        padding: 0;
+        flex-direction: column;
+    }
+}

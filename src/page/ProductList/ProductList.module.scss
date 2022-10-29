@@ -1,0 +1,33 @@
+.Title {
+    margin: 20px;
+}
+
+.FilterContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.Filter {
+    margin: 20px;
+}
+.FilterText {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.Select {
+    padding: 10px;
+    margin-right: 20px;
+}
+@media only screen and (min-width: 380px) and (max-width: 740px) {
+    .Filter {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .FilterText {
+        margin-right: 0;
+    }
+    .Select {
+        margin: 10px 0;
+    }
+}

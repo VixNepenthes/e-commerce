@@ -1,0 +1,111 @@
+.Container {
+    display: flex;
+}
+
+.Left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.Logo {
+    font-weight: bold;
+    font-size: 3rem;
+}
+.Desc {
+    margin: 20px 0px;
+}
+
+.SocialContainer {
+    display: flex;
+}
+
+.SocialIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &.FaceB {
+        background-color: #3b5999;
+    }
+    &.Insta {
+        background-color: #e4405f;
+    }
+    &.Twit {
+        background-color: #55acee;
+    }
+    &.Pint {
+        background-color: #e60023;
+    }
+}
+
+.Icon {
+    transform: translateY(-1px) scale(1.6);
+}
+
+.Center {
+    flex: 1;
+    padding: 20px;
+}
+
+.Title {
+    margin-bottom: 30px;
+}
+.List {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ListItem {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.Right {
+    flex: 1;
+    padding: 20px;
+}
+
+.ContactItem {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.ContactIcon {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.PaymentContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.Payment {
+    height: 10%;
+    width: 10%;
+    object-fit: contain;
+    margin-right: 10px;
+}
+@media only screen and (min-width: 380px) and (max-width: 740px) {
+    .Center {
+        display: none;
+    }
+    .Container {
+        flex-direction: column;
+    }
+    .Right {
+        background-color: #fff8f8;
+    }
+}

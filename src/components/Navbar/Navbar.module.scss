@@ -1,0 +1,92 @@
+.Container {
+    height: 60px;
+}
+.Wrapper {
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.Left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.SearchContainer {
+    border: 0.5px solid lightgray;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+.Input {
+    border: none;
+}
+
+.Center {
+    flex: 1;
+}
+
+.Logo {
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+}
+.Right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.MenuItem {
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+.CartIcon {
+    transform: scale(1.8);
+}
+.Badge {
+    transform: scale(1.2);
+}
+
+@media only screen and (min-width: 380px) and (max-width: 740px) {
+    .Container {
+        height: 50px;
+    }
+    .Wrapper {
+        padding: 10px 0;
+    }
+    .Language {
+        display: none;
+    }
+    .Input {
+        width: 50px;
+    }
+    .Logo {
+        font-size: 1.8rem;
+        margin-left: 28px;
+    }
+
+    .Right {
+        justify-content: center;
+        flex: 2;
+    }
+    .MenuItem {
+        font-size: 1.3rem;
+        margin-left: 0;
+        margin: 0 4px;
+    }
+    .Badge {
+        transform: scale(0.9);
+    }
+    .SearchContainer {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+}
